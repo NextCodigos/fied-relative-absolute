@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            position: relative;
+        }
+
+        .circulo {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 44%;
+            top: 44%;
+            z-index: 1;
+        }
+
+        .caja-izquierda {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 44%;
+        }
+
+        .caja-derecha {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 0;
+            top: 44%;
+        }
+
+        /* Add larger boxes inside the gray square */
+        .caja-superior-izquierda {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .caja-superior-derecha {
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="caja-superior-izquierda"></div>
+        <div class="caja-superior-derecha"></div>
+        <div class="caja-izquierda"></div>
+        <div class="circulo"></div>
+        <div class="caja-derecha"></div>
+    </div>
+</body>
+</html>

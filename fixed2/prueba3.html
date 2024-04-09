@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /* Utilizamos flexbox para organizar las columnas */
+        }
+
+        .column {
+            width: 33.33%; /* Cada columna ocupará el 33.33% del ancho para tres columnas */
+            padding: 10px;
+            box-sizing: border-box; /* Para incluir el relleno en el ancho total */
+            display: flex; /* Utilizamos flexbox en las columnas para igualar el tamaño de los elementos */
+            align-items: center; /* Centramos verticalmente los elementos */
+            justify-content: center; /* Centramos horizontalmente los elementos */
+        }
+
+        .rextangulo {
+            width: 100px; /* Ancho de las cajas rojas */
+            height: 300px; /* Alto de las cajas rojas */
+            background-color: red;
+            display: flex; /* Utilizamos flexbox en las cajas rojas */
+            align-items: center; /* Centramos verticalmente el contenido */
+            justify-content: center; /* Centramos horizontalmente el contenido */
+            position: relative;
+        }
+        
+        .cuadrado {
+            width: 100%; /* Ancho del cuadrado gris en relación al ancho de la caja roja */
+            padding-top: 100%; /* Altura del cuadrado gris en relación al ancho de la caja roja (para mantenerlo cuadrado) */
+            background-color: #aaa;
+            position: absolute;
+        }
+
+        .cuadrado-extra {
+            width: 100%; /* Ancho del cuadrado extra en relación al ancho de la caja roja */
+            padding-top: 100%; /* Altura del cuadrado extra en relación al ancho de la caja roja (para mantenerlo cuadrado) */
+            background-color: #aaa;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .cuadrado-extra2 {
+            width: 100%; /* Ancho del segundo cuadrado extra en relación al ancho de la caja roja */
+            padding-top: 100%; /* Altura del segundo cuadrado extra en relación al ancho de la caja roja (para mantenerlo cuadrado) */
+            background-color: #aaa;
+            position: absolute;
+            left: 0;
+            top: -100%; /* Ajusta la posición superior del segundo cuadrado extra para que esté arriba del primero */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Primera columna -->
+        <div class="column">
+            <div class="rextangulo">
+                <div class="cuadrado"></div>
+                <div class="cuadrado-extra"></div>
+                <div class="cuadrado-extra2"></div>
+            </div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="column">
+            <div class="rextangulo">
+                <div class="cuadrado"></div>
+                <div class "cuadrado-extra"></div>
+                <div class="cuadrado-extra2"></div>
+            </div>
+        </div>
+        
+        <!-- Tercera columna -->
+        <div class="column">
+            <div class="rextangulo">
+                <div class="cuadrado"></div>
+                <div class="cuadrado-extra"></div>
+                <div class="cuadrado-extra2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

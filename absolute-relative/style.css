@@ -1,0 +1,43 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    position: relative;
+    /* A derecha */
+    left: 200px;
+}
+/* si quitamos position:relative el circulo toma como referencia el body y se situa esquina arriba izquierda */
+
+
+/* Ejemplo 1 */
+/* .circulo {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 300px;
+} */
+
+/* Ejemplo 2 ,se posicionaentorno al body,he añadido el div fuera del div clase cuadrado y se mueve tambien al ser misma clase*/
+.circulo {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    /* A la izquierda el circulo se situa */
+    /* left: 0; */
+
+    /* Para desplazar a derecha */
+    /* left: 30%; */
+
+    /* Paraponer en centro */
+    left: 44%;
+
+    /*para situar el circulo se situa Arriba*/
+    /* top: 0; */
+
+    /* Para poner en centro */
+    top: 44%;
+}

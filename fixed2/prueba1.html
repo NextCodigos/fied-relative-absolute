@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /* Utilizamos flexbox para organizar las columnas */
+        }
+
+        .column {
+            width: 50%; /* Cada columna ocupará el 50% del ancho */
+            padding: 10px;
+            box-sizing: border-box; /* Para incluir el relleno en el ancho total */
+        }
+
+        .cuadrado {
+            width: 100px; /* Tamaño del cuadrado gris */
+            height: 100px; /* Tamaño del cuadrado gris */
+            background-color: #aaa;
+        }
+
+        .rextangulo {
+            width: 150px; /* Tamaño del rectángulo rojo */
+            height: 300px; /* Tamaño del rectángulo rojo */
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Primera columna -->
+        <div class="column">
+            <div class="cuadrado"></div>
+            <div class="rextangulo"></div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="column">
+            <div class="cuadrado"></div>
+            <div class="rextangulo"></div>
+        </div>
+    </div>
+</body>
+</html>

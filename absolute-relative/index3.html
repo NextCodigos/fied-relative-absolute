@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            position: relative;
+        }
+
+        .circulo {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 44%;
+            top: 44%;
+            z-index: 1; /* Set a higher z-index to make it appear above other elements */
+        }
+
+        /* Add a box to the left */
+        .caja-izquierda {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 44%;
+        }
+
+        /* Add a box to the right */
+        .caja-derecha {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 0;
+            top: 44%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="caja-izquierda"></div>
+        <div class="circulo"></div>
+        <div class="caja-derecha"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            position: fixed;
+            left: 50px;
+            top: 200px;
+        }
+
+        .rextangulo {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: fixed;
+            left: 0;
+        }
+
+        .cuadrado-gris {
+            width: 150px; /* Adjust the size as needed */
+            height: 150px; /* Adjust the size as needed */
+            background-color: #ccc;
+            position: absolute; /* Use absolute positioning inside the red box */
+            left: 0;
+            top: 75px; /* Adjust the positioning as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="rextangulo">
+            <div class="cuadrado-gris"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        .cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    position: fixed;
+    /* a la derecha,sino pongo abajo la caja arriba esta a la derecha,asi en centro de la caja roja */
+    left: 50px;
+    /* bajamos caja gris hacia abajo */
+    top: 200px;
+
+}
+
+.rextangulo {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    /* position: fixed; */
+}
+    </style>
+    </head>
+    <body>
+        <div class="cuadrado"></div>
+
+        <div class="rextangulo"></div>
+        <div class="rextangulo"></div>
+        <div class="rextangulo"></div>
+        <div class="rextangulo"></div>
+        <div class="rextangulo"></div>
+    </body>
+</html> -->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Boxes</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .drop-zone {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado" id="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="box" id="caja1" draggable="true" ondragstart="drag(event)">Caja 1</div>
+            <div class="box" id="caja2" draggable="true" ondragstart="drag(event)">Caja 2</div>
+            <div class="box" id="caja3" draggable="true" ondragstart="drag(event)">Caja 3</div>
+            <div class="box" id="caja4" draggable="true" ondragstart="drag(event)">Caja 4</div>
+        </div>
+        <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            const target = event.target;
+
+            if (target.classList.contains('drop-zone')) {
+                target.appendChild(document.getElementById(data));
+            } else if (target.classList.contains('cuadrado')) {
+                target.appendChild(document.getElementById(data));
+            }
+        }
+    </script>
+</body>
+</html>

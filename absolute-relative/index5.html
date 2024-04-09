@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: #aaa;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 80px;
+            top: 80px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .caja-izquierda {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .caja-superior-izquierda {
+            width: 80px;
+            height: 80px;
+            background-color: purple;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .caja-superior-derecha {
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Add four new boxes */
+        .caja1, .caja2, .caja3, .caja4 {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 18px;
+        }
+
+        .caja1 {
+            left: 10px;
+            top: 10px;
+        }
+
+        .caja2 {
+            left: 50px;
+            top: 10px;
+        }
+
+        .caja3 {
+            left: 10px;
+            top: 50px;
+        }
+
+        .caja4 {
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="caja-superior-izquierda">Caja 1</div>
+        <div class="caja-superior-derecha">Caja 2</div>
+        <div class="caja-izquierda">Caja 3</div>
+        <div class="circulo">Caja 4</div>
+        <div class="caja1">Caja 1</div>
+        <div class="caja2">Caja 2</div>
+        <div class="caja3">Caja 3</div>
+        <div class="caja4">Caja 4</div>
+    </div>
+</body>
+</html>
